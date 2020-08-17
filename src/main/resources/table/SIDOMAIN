@@ -1,0 +1,10 @@
+CREATE TABLE sidomain (
+	id integer NOT NULL,
+	domain_id varchar(20) NOT NULL,
+	domain_name varchar(20) NOT NULL,
+	description varchar(30) NULL,
+	create_id varchar(20) NOT NULL,
+	create_dt timestamp NULL,
+	update_id varchar(20) NOT NULL,
+	update_dt timestamp NULL
+);

@@ -1,0 +1,46 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'war'
+	id 'java'
+}
+
+group = 'com.seoulit'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+bootWar{                        
+	archiveBaseName="sipotal"
+	archiveVersion="0.0.1-SNAPSHOT"
+}
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// implementation 'org.springframework.boot:spring-boot-starter-security'
+	// implementation 'org.springframework.security:spring-security:1.7.2.RELEASE'
+	implementation 'org.springframework.security:spring-security-test'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	implementation group: 'com.twilio.sdk', name: 'twilio', version: '7.9.1'
+	implementation 'org.postgresql:postgresql'
+		compile fileTree(include: ['*.jar'], dir: 'libs')
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	// testImplementation 'org.springframework.security:spring-security-test'
+	
+	
+}
+
+test {
+	useJUnitPlatform()
+}

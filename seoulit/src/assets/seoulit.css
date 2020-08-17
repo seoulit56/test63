@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.el-form-item__label{
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.el-table__body-wrapper{
+    cursor: pointer !important;
+}
+
+.el-dialog__body{
+    padding-top: 0px !important;
+    /* padding-bottom: 0px !important; */
+}
+
+/* input[type="text"]:disabled {
+    background-color: #F5F7FA !important;;
+  } */
+
+/* ?? */
+.el-input.is-disabled .el-input__inner {
+    background-color: #F5F7FA !important;
+}
+
+
+/* .el-popover{
+    color: #ff0000 !important;
+    border-color: red !important;
+} */
+/* .el-popover el-popper tttt el-popover--plain {
+    color: #ff0000 !important;
+    border-color: red !important;
+} */
+.no-margin-b {
+    margin-bottom: 0px !important;
+}
+.el-form-item__content  .error-pop {
+    color: #ff0000 !important;
+    border-color: red !important;
+
+}
+.si-divider {
+    height: 1px;
+    position: inherit;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgb(220, 223, 230);
+}
+
+.c-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.c-left {
+    float: left;
+}
+
+.c-right {
+    float: right;
+}
+
+.c-right-p {
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+}
+
+.error-pop {
+    color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+.error-pop .popper__arrow {
+    border-bottom-color: #ff0000 !important;
+}
+
+.red-c {
+    color: #ff0000;
+}
+/* 좌우 15여백 */
+.ws-15 {
+    padding: 10px 15px !important;
+}
+
+.ee {
+    top: 5%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+
+/* 회원가입 아이콘 */
+.acc {
+    padding-right: 12px;
+    padding-top: 7px;
+}
+
+/* Input number에 화살표 삭제 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

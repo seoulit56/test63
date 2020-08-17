@@ -1,0 +1,16 @@
+CREATE TABLE siuser (
+	id integer NOT NULL,
+	user_id varchar(20) NOT NULL,
+	user_name varchar(20) NOT NULL,
+	"password" varchar(20) NOT NULL,
+	tel varchar(13) NOT NULL,
+	email varchar(30) NOT NULL,
+	address varchar(50) NULL,
+	birthday date NOT NULL,
+	status varchar(20) NOT NULL,
+	confirm bool NOT NULL,
+	create_id varchar(20) NOT NULL,
+	create_dt timestamp NULL,
+	update_id varchar(20) NOT NULL,
+	update_dt timestamp NULL
+);

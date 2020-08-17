@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>icon-font-dest</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 10px 20px;
+		}
+
+		.preview {
+			line-height: 2em;
+		}
+
+		.preview__icon {
+			display: inline-block;
+			width: 32px;
+			text-align: center;
+		}
+
+		.icon {
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		@font-face {
+	font-family: "icon-font-dest";
+	src: url("icon-font-dest.eot?f8052a2b272c067dfdde92c22eeff22b?#iefix") format("embedded-opentype"),
+url("icon-font-dest.woff2?f8052a2b272c067dfdde92c22eeff22b") format("woff2"),
+url("icon-font-dest.woff?f8052a2b272c067dfdde92c22eeff22b") format("woff");
+}
+
+.icon-font {
+	line-height: 1;
+}
+
+.icon-font:before {
+	font-family: icon-font-dest !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.icon-font-account-c:before {
+	content: "\f101";
+}
+.icon-font-account:before {
+	content: "\f102";
+}
+.icon-font-at:before {
+	content: "\f103";
+}
+.icon-font-lock-c:before {
+	content: "\f104";
+}
+.icon-font-lock-q:before {
+	content: "\f105";
+}
+.icon-font-map-marker:before {
+	content: "\f106";
+}
+.icon-font-phone:before {
+	content: "\f107";
+}
+
+	</style>
+</head>
+<body>
+	<h1>icon-font-dest</h1>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-account-c"></span>
+		</span>
+		<span>account-c</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-account"></span>
+		</span>
+		<span>account</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-at"></span>
+		</span>
+		<span>at</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-lock-c"></span>
+		</span>
+		<span>lock-c</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-lock-q"></span>
+		</span>
+		<span>lock-q</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-map-marker"></span>
+		</span>
+		<span>map-marker</span>
+	</div>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" icon-font-phone"></span>
+		</span>
+		<span>phone</span>
+	</div>
+</body>
+</html>

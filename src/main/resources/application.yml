@@ -1,0 +1,58 @@
+#server
+server:
+    port: 8282
+
+#logging
+logging:
+    level:
+        root: info
+        common.interceptor: debug
+
+mybatis: 
+    configuration.map-underscore-to-camel-case: true
+
+#Datasource
+spring:
+    # logback
+    profiles:
+        active: local
+        # active: dev
+    # mvc - view 정적 자원경로 셋팅
+    mvc:
+        #static-path-pattern: /static/**
+    datasource:
+        hikari:
+            username: seoulit
+            password: seoulit5033
+            jdbc-url: jdbc:log4jdbc:postgresql://49.50.175.65:5432/seoulitdb
+            driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+            # jdbc-url: jdbc:postgresql://49.50.175.65:5432/seoulitdb
+            # driverClassName: org.postgresql.Driver
+            # username: scott
+            # password: tiger
+            # jdbc-url: jdbc:oracle:thin:@//localhost:1521/xe
+            # driver-class-name: oracle.jdbc.OracleDriver
+        jpa:
+            username: seoulit
+            password: seoulit5033
+            jdbc-url: jdbc:log4jdbc:postgresql://49.50.175.65:5432/seoulitdb
+            driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy            
+            # jdbc-url: jdbc:postgresql://49.50.175.65:5432/seoulitdb
+            # driverClassName: org.postgresql.Driver
+            # username: scott
+            # password: tiger
+            # jdbc-url: jdbc:oracle:thin:@//localhost:1521/xe
+            # driver-class-name: oracle.jdbc.OracleDriver
+    servlet:
+        multipart:
+            enabled: true
+            max-file-size: 50MB
+            max-request-size: 50MB
+    
+    jpa:
+        open-in-view: false
+        show-sql: false
+        hibernate:
+            use-new-id-generator-mappings: true
+            format_sql: true
+            ddl-auto: none

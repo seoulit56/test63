@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seoulit.app.system.navigator.NavigatorDao">
+
+	<select id="mainNavList" resultType="map">
+	
+		SELECT  ID
+			,	PARENT
+			,	NAVIGATOR_ID
+			,	NAVIGATOR_NAME
+			,	URL
+			,	DESKTOP
+			,	MOBILE
+			,	NAVIGATOR_SEQ
+			,	CLASS_TYPE
+		FROM	NAVIGATOR
+	
+	</select>
+
+	
+</mapper>
